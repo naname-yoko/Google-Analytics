@@ -24,11 +24,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios
 
   s.source_files = 'GoogleAnalytics-iOS-SDK/Library/*.h'
-  #s.preserve_paths = 'GoogleAnalytics-iOS-SDK/Library/*.a'
-  s.preserve_paths = 'libGoogleAnalytics.a'
+  s.preserve_paths = 'GoogleAnalytics-iOS-SDK/Library/*.a'
 
   s.frameworks = 'CFNetwork', 'CoreData', 'SystemConfiguration'
   s.library   = 'GoogleAnalytics'
 
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalytics-iOS-SDK/GoogleAnalytics-iOS-SDK/Library"' }
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalytics-iOS-SDK/Library"' }
 end
