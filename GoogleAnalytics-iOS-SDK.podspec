@@ -20,14 +20,14 @@ Pod::Spec.new do |s|
       LICENSE
   }
   s.author       = 'Google Inc.'
-  s.source       = { :git => "https://github.com/mutualmobile/Google-Analytics.git", :tag => "2.0beta4" }
+  s.source       = { :git => "https://github.com/naname-yoko/Google-Analytics.git" }
   s.platform     = :ios
 
   s.source_files = 'GoogleAnalytics-iOS-SDK/Library/*.h'
-  s.preserve_paths = 'GoogleAnalytics-iOS-SDK/Library/*.a'
+  s.preserve_paths = '*.a'
 
   s.frameworks = 'CFNetwork', 'CoreData', 'SystemConfiguration'
   s.library   = 'GoogleAnalytics'
 
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalytics-iOS-SDK/GoogleAnalytics-iOS-SDK/Library"' }
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalytics-iOS-SDK"' }
 end
